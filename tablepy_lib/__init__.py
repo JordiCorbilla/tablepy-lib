@@ -1,1 +1,3 @@
 from tablepy_lib.consoleFormatter import markdown
+from tablepy_lib.consoleFormatter import sql_insert
+from tablepy_lib import consoleFormatter

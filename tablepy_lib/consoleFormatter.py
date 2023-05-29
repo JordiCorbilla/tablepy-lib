@@ -3,7 +3,7 @@
 #----------------------------------------------------------------------------
 # Created By  : Jordi Corbilla
 # Created Date: 2023
-# version ='0.4.0'
+# version ='0.5.0'
 # ---------------------------------------------------------------------------
 
 import pandas as pd
@@ -134,5 +134,5 @@ class ConsoleFormatter:
 def markdown(data):
     return ConsoleFormatter(data).to_table()
 
-def sql_insert(data):
-    return ConsoleFormatter(data).to_sql()
+def sql_insert(data, table_name):
+    return ConsoleFormatter(data).to_sql(table_name)
