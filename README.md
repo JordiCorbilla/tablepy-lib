@@ -28,6 +28,13 @@ Sample output:
 | JC      | 2.0      | DE        | 3434243   | 
 ```
 
+| Name    | Age      | Country   | Data      | 
+| ------- | -------- | --------- | --------- | 
+| John    | -28.0    | USA       | USA       | 
+| Emily   | 3002.6   | Canada    | Canada    | 
+| Tom     | 25.0     | UK        | UK        | 
+| JC      | 2.0      | DE        | 3434243   | 
+
 ## Usage - SQL Insert
 
 ```python
