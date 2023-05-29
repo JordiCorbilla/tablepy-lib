@@ -3,7 +3,7 @@
 #----------------------------------------------------------------------------
 # Created By  : Jordi Corbilla
 # Created Date: 2023
-# version ='1.0'
+# version ='0.4.0'
 # ---------------------------------------------------------------------------
 
 from tablepy_lib import consoleFormatter
