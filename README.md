@@ -1,5 +1,7 @@
 # tablepy Lib
 
+This is a versatile and user-friendly Python table library that can quickly render any Dictionary{key, []} or DataFrame into a visually appealing markdown or sql insert
+
 ## Usage - Markdown
 
 ```python
@@ -36,7 +38,8 @@ data = {
     "Data": ["USA", "Canada", "UK", "3434243"]
 }
 
-table = consoleFormatter(data_frame).to_sql('dd')
+data_frame = pd.DataFrame(data)
+table = sql_insert(data_frame, 'dd')
 print(table)
 
 ```
