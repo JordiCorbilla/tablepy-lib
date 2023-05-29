@@ -5,6 +5,8 @@ This is a versatile and user-friendly Python table library that can quickly rend
 ## Usage - Markdown
 
 ```python
+from tablepy_lib import markdown
+
 data = {
     "Name": ["John", "Emily", "Tom", "JC"],
     "Age": [-28, 3002.6, 25, 2],
@@ -37,6 +39,8 @@ Sample output:
 ## Usage - SQL Insert
 
 ```python
+from tablepy_lib import sql_insert
+
 data = {
     "Name": ["John", "Emily", "Tom", "JC"],
     "Age": [-28, 3002.6, 25, 2],
@@ -52,7 +56,7 @@ print(table)
 
 Sample output:
 
-```
+```sql
 INSERT INTO dd (Name, Age, Country, Data) VALUES ('John', -28.0, 'USA', 'USA');
 INSERT INTO dd (Name, Age, Country, Data) VALUES ('Emily', 3002.6, 'Canada', 'Canada');
 INSERT INTO dd (Name, Age, Country, Data) VALUES ('Tom', 25.0, 'UK', 'UK');
