@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "tablepy-lib"
-version = "0.3.0"
-description = "This is a versatile and user-friendly Python table library that can quickly render any Dictionary<TV, T> or DataFrame into a visually appealing markdown"
+version = "0.4.0"
+description = "This is a versatile and user-friendly Python table library that can quickly render any Dictionary<TV, T> or DataFrame into a visually appealing markdown or sql insert"
 authors = ["Jordi Corbilla <jordi.coll.corbilla@gmail.com>"]
 readme = "README.md"
 packages = [{include = "tablepy_lib"}]
