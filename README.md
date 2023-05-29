@@ -12,8 +12,7 @@ data = {
     "Data": ["USA", "Canada", "UK", "3434243"]
 }
 
-formatter = consoleFormatter(data)
-table = formatter.to_table()
+table = markdown(data)
 print(table)    
 ```
 
