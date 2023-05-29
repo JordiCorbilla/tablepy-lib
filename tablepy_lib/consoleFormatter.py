@@ -3,7 +3,7 @@
 #----------------------------------------------------------------------------
 # Created By  : Jordi Corbilla
 # Created Date: 2023
-# version ='0.6.0'
+# version ='0.7.0'
 # ---------------------------------------------------------------------------
 
 import pandas as pd
@@ -131,6 +131,9 @@ class ConsoleFormatter:
         return formatted_value
 
     
+def formatter(data):
+    return ConsoleFormatter(data)
+
 def markdown(data):
     return ConsoleFormatter(data).to_table()
 

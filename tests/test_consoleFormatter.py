@@ -3,10 +3,10 @@
 #----------------------------------------------------------------------------
 # Created By  : Jordi Corbilla
 # Created Date: 2023
-# version ='0.6.0'
+# version ='0.7.0'
 # ---------------------------------------------------------------------------
 
-from tablepy_lib import consoleFormatter
+from tablepy_lib.consoleFormatter import ConsoleFormatter
 import pandas as pd
 
 class MyFormatterTests:
@@ -18,8 +18,7 @@ class MyFormatterTests:
             "Data": ["USA", "Canada", "UK", "3434243"]
         }
         
-        formatter = consoleFormatter(data)
-        table = formatter.to_table()
+        table = ConsoleFormatter(data).to_table()
         print(table)
         assert table == ""
         
@@ -32,14 +31,14 @@ data = {
     "Data": ["USA", "Canada", "UK", "3434243"]
 }
 
-formatter = consoleFormatter(data)
+formatter = ConsoleFormatter(data)
 table = formatter.to_table()
 print(table)    
 
 data_frame = pd.DataFrame(data)
 
-table = consoleFormatter(data_frame).to_table()
+table = ConsoleFormatter(data_frame).to_table()
 print(table)
 
-table = consoleFormatter(data_frame).to_sql('dd')
+table = ConsoleFormatter(data_frame).to_sql('dd')
 print(table)
