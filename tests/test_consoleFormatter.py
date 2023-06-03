@@ -11,7 +11,7 @@ import pandas as pd
 import unittest
 
 class MyFormatterTests(unittest.TestCase):
-    def test_toMarkdown(self):
+    def test_dict_toMarkdown(self):
         data = {
             "Name": ["John", "Emily", "Tom", "JC"],
             "Age": [28, 32, 25, 2],
@@ -35,6 +35,32 @@ class MyFormatterTests(unittest.TestCase):
         self.assertTrue(expected_result[3] in table)
         self.assertTrue(expected_result[4] in table)
         self.assertTrue(expected_result[5] in table)
+        
+    def test_pandas_toMarkdown(self):
+        data = {
+            "Name": ["John", "Emily", "Tom", "JC"],
+            "Age": [28, 32, 25, 2],
+            "Country": ["USA", "Canada", "UK", "DE"],
+            "Data": ["USA", "Canada", "UK", "3434243"]
+        }
+        
+        expected_result = []
+        expected_result.append("| Name    | Age   | Country   | Data      |")
+        expected_result.append("| ------- | ----- | --------- | --------- |")
+        expected_result.append("| John    | 28    | USA       | USA       |")
+        expected_result.append("| Emily   | 32    | Canada    | Canada    |")
+        expected_result.append("| Tom     | 25    | UK        | UK        |")
+        expected_result.append("| JC      | 2     | DE        | 3434243   |")
+        
+        df = pd.DataFrame(data)
+        table = ConsoleFormatter(df).to_table()
+        
+        self.assertTrue(expected_result[0] in table)
+        self.assertTrue(expected_result[1] in table)
+        self.assertTrue(expected_result[2] in table)
+        self.assertTrue(expected_result[3] in table)
+        self.assertTrue(expected_result[4] in table)
+        self.assertTrue(expected_result[5] in table)        
         
         
     def test_toSql(self):
