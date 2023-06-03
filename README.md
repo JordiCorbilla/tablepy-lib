@@ -2,7 +2,15 @@
 
 This is a versatile and user-friendly Python table library that can quickly render any Dictionary{key, []} or DataFrame into a visually appealing markdown or sql insert
 
-## Usage - Markdown
+## Download Stats
+
+https://pypistats.org/packages/tablepy-lib
+
+## Notebook for testing
+
+https://github.com/JordiCorbilla/tablepy-lib/blob/main/Test%20Package.ipynb
+
+## Usage: Output as Markdown/console
 
 ```python
 from tablepy_lib import markdown
@@ -36,7 +44,7 @@ Sample output:
 | Tom     | 25.0     | UK        | UK        | 
 | JC      | 2.0      | DE        | 3434243   | 
 
-## Usage - SQL Insert
+## Usage: Output as SQL Insert
 
 ```python
 from tablepy_lib import sql_insert
