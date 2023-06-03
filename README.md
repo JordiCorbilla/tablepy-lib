@@ -6,6 +6,10 @@ This is a versatile and user-friendly Python table library that can quickly rend
 
 https://pypistats.org/packages/tablepy-lib
 
+## Notebook for testing
+
+https://github.com/JordiCorbilla/tablepy-lib/blob/main/Test%20Package.ipynb
+
 ## Usage: Output as Markdown/console
 
 ```python
